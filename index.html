@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Renato Dal Bó | Advogado Previdenciário – Salário-Maternidade</title>
+<meta name="description" content="Seu salário-maternidade foi negado pelo INSS? Advocacia especializada em benefícios previdenciários em Brasília. MEI, autônoma, empregada – fale agora.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root { --black: #0a0a0a; --white: #faf8f5; --gold: #b8964a; --gold-light: #d4b06a; --gray: #6b6560; --gray-light: #e8e4de; }
+  html { scroll-behavior: smooth; }
+  body { background: var(--white); color: var(--black); font-family: 'Jost', sans-serif; font-weight: 300; overflow-x: hidden; }
+  .hero { min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; position: relative; overflow: hidden; }
+  .hero-left { background: var(--black); display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 60px 50px; position: relative; }
+  .hero-left::after { content: ''; position: absolute; top: 0; right: -1px; width: 2px; height: 100%; background: var(--gold); }
+  .logo-container { width: 200px; height: 200px; display: flex; align-items: center; justify-content: center; margin-bottom: 32px; animation: fadeUp 1s ease both; }
+  .logo-container img { width: 100%; object-fit: contain; }
+  .hero-name { font-family: 'Cormorant Garamond', serif; font-size: clamp(28px, 3vw, 42px); font-weight: 600; color: var(--white); text-align: center; letter-spacing: 0.02em; animation: fadeUp 1s ease 0.2s both; }
+  .hero-oab { font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-top: 8px; animation: fadeUp 1s ease 0.3s both; }
+  .hero-divider { width: 40px; height: 1px; background: var(--gold); margin: 24px auto; animation: fadeUp 1s ease 0.4s both; }
+  .hero-area { font-size: 11px; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gray); text-align: center; animation: fadeUp 1s ease 0.5s both; }
+  .hero-right { display: flex; flex-direction: column; justify-content: center; padding: 60px 60px 60px 70px; position: relative; }
+  .hero-right::before { content: ''; position: absolute; top: -100px; right: -100px; width: 400px; height: 400px; border-radius: 50%; background: radial-gradient(circle, rgba(184,150,74,0.06) 0%, transparent 70%); pointer-events: none; }
+  .tag { display: inline-block; font-size: 10px; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gold); border: 1px solid var(--gold); padding: 6px 14px; margin-bottom: 28px; animation: fadeUp 1s ease 0.3s both; }
+  .hero-headline { font-family: 'Cormorant Garamond', serif; font-size: clamp(36px, 4.5vw, 62px); font-weight: 700; line-height: 1.1; color: var(--black); margin-bottom: 24px; animation: fadeUp 1s ease 0.5s both; }
+  .hero-headline em { font-style: italic; color: var(--gold); }
+  .hero-sub { font-size: 15px; line-height: 1.7; color: var(--gray); max-width: 420px; margin-bottom: 40px; animation: fadeUp 1s ease 0.7s both; }
+  .cta-btn { display: inline-flex; align-items: center; gap: 12px; background: var(--gold); color: var(--white); font-family: 'Jost', sans-serif; font-size: 13px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; text-decoration: none; padding: 18px 36px; transition: background 0.3s, transform 0.2s; animation: fadeUp 1s ease 0.9s both; align-self: flex-start; }
+  .cta-btn:hover { background: var(--gold-light); transform: translateY(-2px); }
+  .scroll-hint { position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 8px; color: var(--gray); font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; animation: pulse 2s ease infinite; }
+  .scroll-hint-line { width: 1px; height: 40px; background: linear-gradient(to bottom, var(--gold), transparent); }
+  .strip { background: var(--black); padding: 16px 40px; display: flex; justify-content: center; align-items: center; gap: 40px; flex-wrap: wrap; }
+  .strip-item { font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold-light); display: flex; align-items: center; gap: 10px; }
+  .strip-dot { width: 4px; height: 4px; border-radius: 50%; background: var(--gold); }
+  .section { padding: 100px 60px; max-width: 1200px; margin: 0 auto; }
+  .section-label { font-size: 10px; letter-spacing: 0.3em; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; }
+  .section-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(32px, 4vw, 52px); font-weight: 600; line-height: 1.15; color: var(--black); margin-bottom: 48px; max-width: 600px; }
+  .cards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 2px; background: var(--gray-light); }
+  .card { background: var(--white); padding: 40px 32px; position: relative; overflow: hidden; transition: transform 0.3s; }
+  .card:hover { transform: translateY(-4px); }
+  .card::before { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 2px; background: var(--gold); transition: width 0.4s ease; }
+  .card:hover::before { width: 100%; }
+  .card-icon { font-size: 28px; margin-bottom: 20px; }
+  .card-title { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 600; color: var(--black); margin-bottom: 12px; }
+  .card-text { font-size: 13px; line-height: 1.7; color: var(--gray); }
+  .casos-section { background: var(--black); padding: 100px 60px; }
+  .casos-inner { max-width: 1200px; margin: 0 auto; }
+  .casos-section .section-title { color: var(--white); }
+  .casos-list { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: #222; margin-top: 48px; }
+  .caso-item { background: var(--black); padding: 36px 40px; display: flex; gap: 20px; align-items: flex-start; transition: background 0.3s; }
+  .caso-item:hover { background: #111; }
+  .caso-num { font-family: 'Cormorant Garamond', serif; font-size: 36px; color: var(--gold); opacity: 0.4; line-height: 1; flex-shrink: 0; font-style: italic; }
+  .caso-text { font-size: 14px; line-height: 1.7; color: #aaa; }
+  .caso-text strong { display: block; color: var(--white); font-weight: 500; margin-bottom: 6px; font-size: 15px; }
+  .steps-section { padding: 100px 60px; max-width: 1200px; margin: 0 auto; }
+  .steps-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; margin-top: 48px; position: relative; }
+  .steps-grid::before { content: ''; position: absolute; top: 32px; left: 10%; width: 80%; height: 1px; background: var(--gray-light); }
+  .step { padding: 0 24px; text-align: center; position: relative; }
+  .step-num { width: 64px; height: 64px; border: 1px solid var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond', serif; font-size: 22px; color: var(--gold); margin: 0 auto 24px; background: var(--white); position: relative; z-index: 1; }
+  .step-title { font-family: 'Cormorant Garamond', serif; font-size: 18px; font-weight: 600; margin-bottom: 10px; color: var(--black); }
+  .step-text { font-size: 13px; line-height: 1.7; color: var(--gray); }
+  .sabia-section { background: var(--white); padding: 100px 60px; border-top: 1px solid var(--gray-light); }
+  .sabia-inner { max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; text-align: center; }
+  .sabia-quote { font-family: 'Cormorant Garamond', serif; font-size: clamp(22px, 3vw, 36px); font-style: italic; font-weight: 400; line-height: 1.5; color: var(--black); margin-bottom: 32px; position: relative; padding: 0 40px; }
+  .sabia-quote::before { content: '\201C'; position: absolute; left: 0; top: -10px; font-size: 80px; color: var(--gold); opacity: 0.3; line-height: 1; font-style: normal; }
+  .sabia-body { font-size: 15px; line-height: 1.8; color: var(--gray); margin-bottom: 40px; max-width: 640px; }
+  .sabia-urgency { display: inline-flex; align-items: center; gap: 12px; background: #fdf6ec; border: 1px solid var(--gold); padding: 16px 28px; font-size: 13px; color: var(--gold); letter-spacing: 0.08em; margin-bottom: 40px; }
+  .sabia-urgency::before { content: '\26A0'; font-size: 16px; }
+  .cta-section { background: linear-gradient(135deg, #0a0a0a 0%, #1a1208 100%); padding: 100px 60px; text-align: center; position: relative; overflow: hidden; }
+  .cta-section::before { content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 600px; height: 600px; border-radius: 50%; background: radial-gradient(circle, rgba(184,150,74,0.12) 0%, transparent 70%); pointer-events: none; }
+  .cta-section .section-label { color: var(--gold-light); }
+  .cta-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(36px, 5vw, 64px); font-weight: 700; color: var(--white); line-height: 1.1; margin-bottom: 20px; position: relative; }
+  .cta-title em { color: var(--gold); font-style: italic; }
+  .cta-desc { font-size: 15px; color: #888; margin-bottom: 48px; position: relative; }
+  .cta-btn-large { display: inline-flex; align-items: center; gap: 14px; background: var(--gold); color: var(--white); font-family: 'Jost', sans-serif; font-size: 14px; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; text-decoration: none; padding: 22px 52px; transition: background 0.3s, transform 0.2s, box-shadow 0.3s; position: relative; }
+  .cta-btn-large:hover { background: var(--gold-light); transform: translateY(-3px); box-shadow: 0 20px 60px rgba(184,150,74,0.3); }
+  footer { background: var(--black); border-top: 1px solid #1a1a1a; padding: 40px 60px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
+  .footer-name { font-family: 'Cormorant Garamond', serif; font-size: 18px; color: var(--white); }
+  .footer-info { font-size: 12px; color: #555; text-align: right; line-height: 1.7; }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes pulse { 0%, 100% { opacity: 0.4; } 50% { opacity: 1; } }
+  @media (max-width: 768px) {
+    .hero { grid-template-columns: 1fr; }
+    .hero-left { padding: 60px 30px 40px; min-height: auto; }
+    .hero-left::after { display: none; }
+    .logo-container { width: 140px; height: 140px; }
+    .hero-right { padding: 48px 30px 80px; }
+    .cta-btn { align-self: stretch; justify-content: center; }
+    .strip { gap: 16px; padding: 16px 20px; }
+    .strip-item { font-size: 10px; }
+    .section, .steps-section, .sabia-section { padding: 70px 24px; }
+    .casos-section { padding: 70px 24px; }
+    .casos-list { grid-template-columns: 1fr; }
+    .steps-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
+    .steps-grid::before { display: none; }
+    .cta-section { padding: 70px 24px; }
+    .cta-btn-large { padding: 18px 32px; width: 100%; justify-content: center; }
+    footer { padding: 32px 24px; flex-direction: column; text-align: center; }
+    .footer-info { text-align: center; }
+    .sabia-quote { padding: 0 20px; font-size: 20px; }
+  }
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-left">
+    <div class="logo-container"><img src="logo.jpeg" alt="Renato Dal Bó Advogado"></div>
+    <div class="hero-name">Renato Dal Bó</div>
+    <div class="hero-oab">Advogado · OAB/DF</div>
+    <div class="hero-divider"></div>
+    <div class="hero-area">Direito Previdenciário</div>
+  </div>
+  <div class="hero-right">
+    <div class="tag">Benefício negado pelo INSS?</div>
+    <h1 class="hero-headline">Seu salário&#8209;maternidade<br><em>é um direito.</em><br>Não uma concessão.</h1>
+    <p class="hero-sub">MEI, autônoma, empregada ou trabalhadora rural — se o INSS negou ou não pagou seu salário-maternidade, há solução. Atendimento especializado em Brasília.</p>
+    <a href="https://wa.me/5561983565625?text=Ol%C3%A1%2C%20Dr.%20Renato.%20Meu%20sal%C3%A1rio-maternidade%20foi%20negado%20e%20gostaria%20de%20orienta%C3%A7%C3%A3o." class="cta-btn" target="_blank" rel="noopener">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Falar com o Dr. Renato
+    </a>
+  </div>
+  <div class="scroll-hint"><div class="scroll-hint-line"></div><span>saiba mais</span></div>
+</section>
+
+<div class="strip">
+  <div class="strip-item"><div class="strip-dot"></div>Atendimento em Brasília e DF</div>
+  <div class="strip-item"><div class="strip-dot"></div>MEI · Autônoma · Empregada · Rural</div>
+  <div class="strip-item"><div class="strip-dot"></div>Honorários por êxito disponíveis</div>
+  <div class="strip-item"><div class="strip-dot"></div>Prazo limitado para recorrer</div>
+</div>
+
+<section class="section">
+  <div class="section-label">Seu direito</div>
+  <h2 class="section-title">Quem tem direito ao salário-maternidade?</h2>
+  <div class="cards-grid">
+    <div class="card"><div class="card-icon">🏪</div><div class="card-title">MEI</div><div class="card-text">Microempreendedora Individual com contribuições em dia tem direito ao benefício. Muitos pedidos são negados indevidamente.</div></div>
+    <div class="card"><div class="card-icon">💼</div><div class="card-title">Autônoma / Contribuinte Individual</div><div class="card-text">Quem contribui por conta própria ao INSS também tem direito, desde que cumprido o período de carência.</div></div>
+    <div class="card"><div class="card-icon">👩‍💼</div><div class="card-title">Empregada CLT</div><div class="card-text">Benefício garantido independentemente de carência. Negativa ou atraso do INSS pode ser combatido judicialmente.</div></div>
+    <div class="card"><div class="card-icon">🌾</div><div class="card-title">Trabalhadora Rural</div><div class="card-text">Segurada especial tem direito mesmo sem contribuições formais, bastando comprovar atividade rural.</div></div>
+  </div>
+</section>
+
+<section class="casos-section">
+  <div class="casos-inner">
+    <div class="section-label" style="color:#b8964a">Situações frequentes</div>
+    <h2 class="section-title">Casos que atendemos</h2>
+    <div class="casos-list">
+      <div class="caso-item"><div class="caso-num">01</div><div class="caso-text"><strong>Benefício negado pelo INSS</strong>O pedido foi indeferido sem justificativa clara ou com alegação de carência insuficiente.</div></div>
+      <div class="caso-item"><div class="caso-num">02</div><div class="caso-text"><strong>MEI com contribuições em dia e negativa</strong>INSS nega alegando irregularidade cadastral ou período de carência, mesmo com pagamentos realizados.</div></div>
+      <div class="caso-item"><div class="caso-num">03</div><div class="caso-text"><strong>Adoção ou guarda judicial</strong>Mães adotivas também têm direito ao salário-maternidade, independentemente da idade da criança.</div></div>
+      <div class="caso-item"><div class="caso-num">04</div><div class="caso-text"><strong>Recurso administrativo ou judicial</strong>Prazo perdido no recurso ou negativa em segunda instância — ainda é possível buscar o benefício.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="steps-section">
+  <div class="section-label">Processo</div>
+  <h2 class="section-title">Como funciona o atendimento</h2>
+  <div class="steps-grid">
+    <div class="step"><div class="step-num">1</div><div class="step-title">Contato inicial</div><div class="step-text">Você envia sua situação pelo WhatsApp. Resposta rápida e sem compromisso.</div></div>
+    <div class="step"><div class="step-num">2</div><div class="step-title">Análise do caso</div><div class="step-text">Avaliamos documentos e verificamos o melhor caminho — administrativo ou judicial.</div></div>
+    <div class="step"><div class="step-num">3</div><div class="step-title">Atuação</div><div class="step-text">Recurso, impugnação ou ação judicial. Você acompanha cada etapa.</div></div>
+    <div class="step"><div class="step-num">4</div><div class="step-title">Recebimento</div><div class="step-text">Benefício reconhecido e pago, incluindo valores retroativos quando cabível.</div></div>
+  </div>
+</section>
+
+<section class="sabia-section">
+  <div class="sabia-inner">
+    <div class="section-label">Você sabia?</div>
+    <div class="sabia-quote">Você pode ter direito ao salário-maternidade que nunca recebeu.</div>
+    <p class="sabia-body">O salário-maternidade é um benefício garantido por lei — e quem não o recebeu corretamente pode ter direito a buscá-lo retroativamente. Se você é autônoma, MEI, contribuinte individual ou segurada especial do INSS, e teve filho nos últimos 4 anos ou está grávida agora, vale a pena verificar a sua situação.</p>
+    <div class="sabia-urgency">O prazo para requerer esse direito é limitado</div>
+    <a href="https://wa.me/5561983565625?text=Ol%C3%A1%2C%20Dr.%20Renato.%20Gostaria%20de%20verificar%20se%20tenho%20direito%20ao%20sal%C3%A1rio-maternidade." class="cta-btn" target="_blank" rel="noopener">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Verificar minha situação
+    </a>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="section-label">Fale agora</div>
+  <h2 class="cta-title">Não deixe seu<br><em>direito prescrever.</em></h2>
+  <p class="cta-desc">Prazo para recorrer é limitado. Quanto antes, maiores as chances de êxito.</p>
+  <a href="https://wa.me/5561983565625?text=Ol%C3%A1%2C%20Dr.%20Renato.%20Meu%20sal%C3%A1rio-maternidade%20foi%20negado%20e%20gostaria%20de%20orienta%C3%A7%C3%A3o." class="cta-btn-large" target="_blank" rel="noopener">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    Falar no WhatsApp agora
+  </a>
+</section>
+
+<footer>
+  <div class="footer-name">Renato Dal Bó · Advogado</div>
+  <div class="footer-info">Brasília – Distrito Federal<br>Este site tem caráter informativo e não constitui captação de clientela.<br>OAB/DF · Publicidade em conformidade com o Provimento 205/2021 do CFOAB.</div>
+</footer>
+
+</body>
+</html>
