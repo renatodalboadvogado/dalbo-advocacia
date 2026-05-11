@@ -16,7 +16,7 @@
   .hero-left { background: var(--black); display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 60px 50px; position: relative; }
   .hero-left::after { content: ''; position: absolute; top: 0; right: -1px; width: 2px; height: 100%; background: var(--gold); }
   .logo-container { width: 200px; height: 200px; display: flex; align-items: center; justify-content: center; margin-bottom: 32px; animation: fadeUp 1s ease both; }
-  .logo-container img { width: 100%; object-fit: contain; }
+  .logo-container img { width: 100%; object-fit: contain; filter: invert(1); }
   .hero-name { font-family: 'Cormorant Garamond', serif; font-size: clamp(28px, 3vw, 42px); font-weight: 600; color: var(--white); text-align: center; letter-spacing: 0.02em; animation: fadeUp 1s ease 0.2s both; }
   .hero-oab { font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-top: 8px; animation: fadeUp 1s ease 0.3s both; }
   .hero-divider { width: 40px; height: 1px; background: var(--gold); margin: 24px auto; animation: fadeUp 1s ease 0.4s both; }
@@ -68,6 +68,17 @@
   .sabia-body { font-size: 15px; line-height: 1.8; color: var(--gray); margin-bottom: 40px; max-width: 640px; }
   .sabia-urgency { display: inline-flex; align-items: center; gap: 12px; background: #fdf6ec; border: 1px solid var(--gold); padding: 16px 28px; font-size: 13px; color: var(--gold); letter-spacing: 0.08em; margin-bottom: 40px; }
   .sabia-urgency::before { content: '\26A0'; font-size: 16px; }
+  /* GESTANTES */
+  .gestante-section { background: #111; padding: 100px 60px; }
+  .gestante-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 400px; gap: 80px; align-items: center; }
+  .gestante-casos { display: flex; flex-direction: column; gap: 14px; margin-top: 32px; }
+  .gestante-caso { display: flex; align-items: flex-start; gap: 12px; font-size: 14px; color: #ccc; line-height: 1.5; }
+  .gc-icon { color: var(--gold); font-size: 16px; flex-shrink: 0; margin-top: 1px; }
+  .gestante-callout { background: #0a0a0a; border: 1px solid #2a2a2a; padding: 48px 40px; display: flex; flex-direction: column; gap: 0; }
+  .gc-number { font-family: 'Cormorant Garamond', serif; font-size: 42px; font-weight: 700; color: var(--gold); line-height: 1; }
+  .gc-label { font-size: 13px; color: #666; line-height: 1.5; margin-top: 8px; }
+  .gc-divider { width: 100%; height: 1px; background: #1a1a1a; margin: 28px 0; }
+  @media (max-width: 768px) { .gestante-inner { grid-template-columns: 1fr; gap: 48px; } .gestante-section { padding: 70px 24px; } }
   .cta-section { background: linear-gradient(135deg, #0a0a0a 0%, #1a1208 100%); padding: 100px 60px; text-align: center; position: relative; overflow: hidden; }
   .cta-section::before { content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 600px; height: 600px; border-radius: 50%; background: radial-gradient(circle, rgba(184,150,74,0.12) 0%, transparent 70%); pointer-events: none; }
   .cta-section .section-label { color: var(--gold-light); }
@@ -114,9 +125,9 @@
     <div class="hero-area">Direito Previdenciário</div>
   </div>
   <div class="hero-right">
-    <div class="tag">Benefício negado pelo INSS?</div>
+    <div class="tag">Está grávida ou foi negada pelo INSS?</div>
     <h1 class="hero-headline">Seu salário&#8209;maternidade<br><em>é um direito.</em><br>Não uma concessão.</h1>
-    <p class="hero-sub">MEI, autônoma, empregada ou trabalhadora rural — se o INSS negou ou não pagou seu salário-maternidade, há solução. Atendimento especializado em Brasília.</p>
+    <p class="hero-sub">Grávida, recém-mãe, MEI, autônoma ou trabalhadora rural — você pode ter direito ao salário-maternidade e não saber. Atendimento especializado em Brasília.</p>
     <a href="https://wa.me/5561983565625?text=Ol%C3%A1%2C%20Dr.%20Renato.%20Meu%20sal%C3%A1rio-maternidade%20foi%20negado%20e%20gostaria%20de%20orienta%C3%A7%C3%A3o." class="cta-btn" target="_blank" rel="noopener">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
       Falar com o Dr. Renato
@@ -131,6 +142,37 @@
   <div class="strip-item"><div class="strip-dot"></div>Honorários por êxito disponíveis</div>
   <div class="strip-item"><div class="strip-dot"></div>Prazo limitado para recorrer</div>
 </div>
+
+<!-- GESTANTES -->
+<section class="gestante-section">
+  <div class="gestante-inner">
+    <div class="gestante-text">
+      <div class="section-label" style="color:#b8964a">Você pode não saber</div>
+      <h2 class="section-title" style="color:var(--white); max-width:500px">Está grávida?<br>Você pode ter direito <em style="color:var(--gold); font-style:italic">agora.</em></h2>
+      <p style="font-size:15px; line-height:1.8; color:#aaa; max-width:480px; margin-bottom:32px">Muitas mulheres perdem o salário-maternidade simplesmente por não saber que têm direito — ou por não pedir no momento certo. Se você está grávida, mesmo que nunca tenha contribuído formalmente ao INSS, pode haver um caminho legal para garantir o benefício.</p>
+      <div class="gestante-casos">
+        <div class="gestante-caso"><span class="gc-icon">✓</span><span>Trabalhou como autônoma informal</span></div>
+        <div class="gestante-caso"><span class="gc-icon">✓</span><span>Abriu MEI recentemente</span></div>
+        <div class="gestante-caso"><span class="gc-icon">✓</span><span>Trabalhadora rural ou doméstica</span></div>
+        <div class="gestante-caso"><span class="gc-icon">✓</span><span>Nunca contribuiu mas quer entender suas opções</span></div>
+      </div>
+      <a href="https://wa.me/5561983565625?text=Ol%C3%A1%2C%20Dr.%20Renato.%20Estou%20gr%C3%A1vida%20e%20gostaria%20de%20saber%20se%20tenho%20direito%20ao%20sal%C3%A1rio-maternidade." class="cta-btn" style="animation:none; margin-top:40px" target="_blank" rel="noopener">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Quero verificar meu direito
+      </a>
+    </div>
+    <div class="gestante-callout">
+      <div class="gc-number">4 anos</div>
+      <div class="gc-label">É o prazo para buscar o benefício após o nascimento</div>
+      <div class="gc-divider"></div>
+      <div class="gc-number">120 dias</div>
+      <div class="gc-label">Duração do salário-maternidade para a maioria das seguradas</div>
+      <div class="gc-divider"></div>
+      <div class="gc-number">1 salário mínimo</div>
+      <div class="gc-label">Valor mínimo garantido para seguradas especiais e MEI</div>
+    </div>
+  </div>
+</section>
 
 <section class="section">
   <div class="section-label">Seu direito</div>
